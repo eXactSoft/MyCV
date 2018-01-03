@@ -1,0 +1,235 @@
+/* Start Global Rules*/
+ul, ol{
+	list-style: none
+}
+
+*{
+	box-sizing:border-box
+}
+
+img{
+	max-width:100% !important;
+}
+
+a{
+	text-decoration:none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+b,strong{
+	font-weight:bold;
+}
+
+em{
+	font-style:italic;
+}
+
+body {
+	line-height: 1;
+	-webkit-text-size-adjust: 100%;
+}
+/* End Global Rules*/
+
+
+/* body background */
+body{
+	background-color:#f0f0f0; /*#f7f7f7*/
+}
+
+/* Start Box Card */
+.box-card{
+	width:1000px;
+	height:600px;
+	background-color:#fff;
+	border-radius:15px;
+	overflow:hidden;/*This property is not use to solve the float problem 
+										but to display the border radius 
+										and cut the blue background at that radius.
+										*/
+	/* To put the CV box at the center of display	
+	   horizontally & vertically do the following 5 steps:
+	*/								
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-500px;
+	margin-top:-300px;
+}
+
+.box-card .header{
+	padding:50px;
+	background-color:rgba(33, 150, 243, 1);	
+	background-image:url("../images/main_bg1600x900.png");
+	color:#fff;
+	font-family:Arial;
+}
+
+.box-card .header .image-box,
+.box-card .header .info-box
+{
+	float:left;
+}
+
+.box-card .header .image-box{
+	width:30%;
+}
+
+.box-card .header .image-box img{
+	margin-bottom:-100px;
+	/* Stamp effect: Do the following 3 steps */
+	background-color:#fff;
+	padding:3px;
+	border:1px solid #e9e9e9;
+	position:relative;
+	top:0px;
+}
+
+.box-card .header .image-box img:hover{
+	top:-10px;
+	box-shadow: 0 18px 24px rgba(0,0,0,.15);
+}
+
+.box-card .header .info-box{
+	width:70%;
+	text-align:center;	
+	padding-top:50px
+}
+
+.box-card .header .info-box h1{
+	font-family: Montserrat, Helvetica, sans-serif;
+	font-size:54px;
+	font-style: normal;
+	font-weight: 700;
+  letter-spacing: 0px;
+	margin:0 0 10px;
+}
+
+.box-card .header .info-box p{
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 18px;
+  line-height: 1.6em;
+  font-weight: 400;
+  font-style: normal;	
+}
+
+.box-card .header .social-links{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+
+}
+
+.box-card .header .social-links a{
+	font-family: Roboto, Helvetica, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #9e9e9e;
+	font-size: 20px;
+  line-height: 1.6em;	
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border-radius: 24px;
+	background-color: #fff;
+	margin: 0 2px;
+	color: #9e9e9e;
+	text-align: center;
+}
+
+.box-card .header .social-links a:hover{
+	background-color: #424242;
+	color: #fff;
+}
+
+.box-card .content{
+	padding:50px;
+}
+
+.box-card .content .text-box{
+	float:left;
+	width:50%;
+	padding:0 30px 0 0;
+}
+.box-card .content .info-box{
+	float:left;
+	width:45%;
+	margin:0 0 0 5%;
+}
+
+
+.box-card .content .text-box h2{
+	font-size: 23px;
+	font-weight: 700;
+  margin: 0 0 25px;
+}
+
+.box-card .content .text-box h2 span{
+	color:rgba(33, 150, 243, 1);
+}
+
+.box-card .content .text-box p{
+	font-family: Roboto, Helvetica, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #424242;
+	font-size: 15px;
+  margin: 0 0 10px;
+	word-wrap: break-word;
+	line-height: 1.6em;
+}
+
+.box-card .content .text-box a{
+	display:inline-block;
+	text-transform: uppercase;
+	margin-top: 15px;
+	background-color: #fff;
+  color: #212121;
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 2.8;
+	padding: 0 1.5em;
+	outline: none;
+	border: 0;
+	border-radius: 3px;
+	white-space: nowrap;
+  vertical-align: middle;
+	touch-action: manipulation;
+  cursor: pointer;
+	user-select: none;
+}
+
+.box-card .content .text-box a:hover{
+	box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+.box-card .content .info-box .title{
+	display: inline-block;
+	color: #424242;	
+  min-width: 120px;	
+	margin: 4px 0;
+	text-align: left;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+  line-height: 1.6em;	
+}
+
+.box-card .content .info-box .value{
+	display: inline-block;
+	color: #9e9e9e;
+}
+
+/* End Box Card */
+
+/* Start My Framework */
+.clearfix{ /* To fix the problems of the float property */
+	clear:both
+}
+/* End My Framework */
